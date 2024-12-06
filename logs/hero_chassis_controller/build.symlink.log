@@ -1,0 +1,5 @@
+Symlinking /home/qyd/dx/one_ws/devel/share/hero_chassis_controller/cmake/hero_chassis_controllerConfig.cmake
+Symlinking /home/qyd/dx/one_ws/devel/share/hero_chassis_controller/cmake/hero_chassis_controllerConfig-version.cmake
+Symlinking /home/qyd/dx/one_ws/devel/lib/pkgconfig/hero_chassis_controller.pc
+Symlinking /home/qyd/dx/one_ws/devel/lib/hero_chassis_controller/cmd_vel_pub
+Symlinking /home/qyd/dx/one_ws/devel/lib/hero_chassis_controller/mecanum_wheels_pub
