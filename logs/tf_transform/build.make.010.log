@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target tf_transform[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/qyd/dx/one_ws/devel/.private/tf_transform/lib/tf_transform/tf_transform[0m
+/usr/bin/ld: CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o: in function `VelocityController::transformVelocityToBaseLink(boost::shared_ptr<geometry_msgs::Twist_<std::allocator<void> > const> const&, geometry_msgs::Twist_<std::allocator<void> >&)':
+tf_transform.cpp:(.text._ZN18VelocityController27transformVelocityToBaseLinkERKN5boost10shared_ptrIKN13geometry_msgs6Twist_ISaIvEEEEERS5_[_ZN18VelocityController27transformVelocityToBaseLinkERKN5boost10shared_ptrIKN13geometry_msgs6Twist_ISaIvEEEEERS5_]+0x173): undefined reference to `void tf2::doTransform<geometry_msgs::Twist_<std::allocator<void> > >(geometry_msgs::Twist_<std::allocator<void> > const&, geometry_msgs::Twist_<std::allocator<void> >&, geometry_msgs::TransformStamped_<std::allocator<void> > const&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/tf_transform.dir/build.make:107：/home/qyd/dx/one_ws/devel/.private/tf_transform/lib/tf_transform/tf_transform] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:175：CMakeFiles/tf_transform.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

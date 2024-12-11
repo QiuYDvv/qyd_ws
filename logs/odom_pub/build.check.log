@@ -1,0 +1,1 @@
+/usr/bin/cmake -S/home/qyd/dx/one_ws/src/odom_pub -B/home/qyd/dx/one_ws/build/odom_pub --check-build-system CMakeFiles/Makefile.cmake 0

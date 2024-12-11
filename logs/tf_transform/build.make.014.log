@@ -1,0 +1,20 @@
+[35m[1mScanning dependencies of target tf_transform[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o[0m
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:[m[K In member function ‘[01m[Kbool VelocityController::transformVelocityToBaseLink(const TwistConstPtr&, geometry_msgs::Twist&)[m[K’:
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:63:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KdoTransform(const TwistConstPtr&, geometry_msgs::Twist&, geometry_msgs::TransformStamped&)[m[K’
+   63 |             tf2::doTransform(cmd_vel, transformed_cmd_vel, transform_stamped[01;31m[K)[m[K;
+      |                                                                             [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/tf2_ros/buffer_interface.h:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf2_ros/buffer.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf2_ros/transform_listener.h:40[m[K,
+                 from [01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:3[m[K:
+[01m[K/opt/ros/noetic/include/tf2/convert.h:53:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> void tf2::doTransform(const T&, T&, const TransformStamped&)[m[K’
+   53 |   void [01;36m[KdoTransform[m[K(const T& data_in, T& data_out, const geometry_msgs::TransformStamped& transform);
+      |        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf2/convert.h:53:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:63:77:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[Kboost::shared_ptr<const geometry_msgs::Twist_<std::allocator<void> > >[m[K’ and ‘[01m[Kgeometry_msgs::Twist[m[K’ {aka ‘[01m[Kgeometry_msgs::Twist_<std::allocator<void> >[m[K’})
+   63 |             tf2::doTransform(cmd_vel, transformed_cmd_vel, transform_stamped[01;36m[K)[m[K;
+      |                                                                             [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/tf_transform.dir/build.make:63：CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:175：CMakeFiles/tf_transform.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

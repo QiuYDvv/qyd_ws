@@ -1,0 +1,8 @@
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:[m[K In member function ‘[01m[Kvoid VelocityController::inverseKinematics(double, double, double, double&, double&, double&, double&)[m[K’:
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:50:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kvz[m[K’ was not declared in this scope; did you mean ‘[01m[Kvx[m[K’?
+   50 |         v4 = [01;31m[Kvz[m[K - vy + (wheel_base * wz);  // 错误修正：应该使用 wz 代替 vz
+      |              [01;31m[K^~[m[K
+      |              [32m[Kvx[m[K
+make[2]: *** [CMakeFiles/tf_transform.dir/build.make:63：CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:175：CMakeFiles/tf_transform.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2
