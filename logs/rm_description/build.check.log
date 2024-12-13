@@ -1,1 +1,0 @@
-/usr/bin/cmake -S/home/qyd/dx/one_ws/src/rm_description -B/home/qyd/dx/one_ws/build/rm_description --check-build-system CMakeFiles/Makefile.cmake 0

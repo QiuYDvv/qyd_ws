@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/qyd/dx/one_ws/install
 
 Name: hero_chassis_controller
 Description: Description of hero_chassis_controller

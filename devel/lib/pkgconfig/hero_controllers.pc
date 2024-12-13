@@ -1,0 +1,1 @@
+/home/qyd/dx/one_ws/devel/.private/hero_controllers/lib/pkgconfig/hero_controllers.pc

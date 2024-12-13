@@ -1,0 +1,36 @@
+[35m[1mScanning dependencies of target hero_chassis_controller_gencfg[0m
+[35m[1mScanning dependencies of target mecanum_wheels_pub[0m
+[35m[1mScanning dependencies of target cmd_vel_pub[0m
+[ 20%] [34m[1mGenerating dynamic reconfigure files from cfg/pids.cfg: /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/include/hero_chassis_controller/pidsConfig.h /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/python3/dist-packages/hero_chassis_controller/cfg/pidsConfig.py[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/cmd_vel_pub.dir/src/cmd_vel_pub.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mecanum_wheels_pub.dir/src/mecanum_wheels_pub.cpp.o[0m
+Traceback (most recent call last):
+  File "/home/qyd/dx/one_ws/src/hero_chassis_controller/cfg/pids.cfg", line 6, in <module>
+    roslib.load_manifest(PACKAGE)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslib/launcher.py", line 64, in load_manifest
+    sys.path = _generate_python_path(package_name, _rospack) + sys.path
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslib/launcher.py", line 97, in _generate_python_path
+    m = rospack.get_manifest(pkg)
+  File "/usr/lib/python3/dist-packages/rospkg/rospack.py", line 171, in get_manifest
+    return self._load_manifest(name)
+  File "/usr/lib/python3/dist-packages/rospkg/rospack.py", line 215, in _load_manifest
+    retval = self._manifests[name] = parse_manifest_file(self.get_path(name), self._manifest_name, rospack=self)
+  File "/usr/lib/python3/dist-packages/rospkg/rospack.py", line 207, in get_path
+    raise ResourceNotFound(name, ros_paths=self._ros_paths)
+rospkg.common.ResourceNotFound: your_package_name
+ROS path [0]=/opt/ros/noetic/share/ros
+ROS path [1]=/home/qyd/dx/one_ws/src/hero_chassis_controller
+ROS path [2]=/home/qyd/dx/one_ws/src/hero_chassis_controller
+ROS path [3]=/home/qyd/dx/one_ws/src/odom_pub
+ROS path [4]=/home/qyd/dx/one_ws/src/rm_description
+ROS path [5]=/home/qyd/dx/one_ws/src/simple_chassis_controller
+ROS path [6]=/home/qyd/dx/one_ws/src/tf_transform
+ROS path [7]=/opt/ros/noetic/share
+make[2]: *** [CMakeFiles/hero_chassis_controller_gencfg.dir/build.make:64：/home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/include/hero_chassis_controller/pidsConfig.h] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:170：CMakeFiles/hero_chassis_controller_gencfg.dir/all] 错误 2
+make[1]: *** 正在等待未完成的任务....
+[ 80%] [32m[1mLinking CXX executable /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/hero_chassis_controller/cmd_vel_pub[0m
+[ 80%] Built target cmd_vel_pub
+[100%] [32m[1mLinking CXX executable /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/hero_chassis_controller/mecanum_wheels_pub[0m
+[100%] Built target mecanum_wheels_pub
+make: *** [Makefile:141：all] 错误 2

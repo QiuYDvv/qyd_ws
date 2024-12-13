@@ -1,0 +1,32 @@
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[35m[1mScanning dependencies of target simple_chassis_controller[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/simple_chassis_controller.dir/src/simple_chassis_controller.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/simple_chassis_controller.dir/home/qyd/dx/one_ws/src/hero_controllers/src/re.cpp.o[0m
+[01m[K/home/qyd/dx/one_ws/src/hero_controllers/src/re.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kmy_package/DynamicConfig.h: 没有那个文件或目录
+    5 | #include [01;31m[K<my_package/DynamicConfig.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/simple_chassis_controller.dir/build.make:76：CMakeFiles/simple_chassis_controller.dir/home/qyd/dx/one_ws/src/hero_controllers/src/re.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:345：CMakeFiles/simple_chassis_controller.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

@@ -1,0 +1,8 @@
+prefix=/home/qyd/dx/one_ws/devel/.private/hero_controllers
+
+Name: hero_controllers
+Description: Description of hero_controllers
+Version: 0.0.0
+Cflags: -I/home/qyd/dx/one_ws/devel/.private/hero_controllers/include
+Libs: -L${prefix}/lib 
+Requires: 

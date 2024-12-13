@@ -2,6 +2,8 @@ hero_chassis_controller
 /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/cmake.lock /home/qyd/dx/one_ws/devel/./cmake.lock
 /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/share/hero_chassis_controller/cmake/hero_chassis_controllerConfig.cmake /home/qyd/dx/one_ws/devel/share/hero_chassis_controller/cmake/hero_chassis_controllerConfig.cmake
 /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/share/hero_chassis_controller/cmake/hero_chassis_controllerConfig-version.cmake /home/qyd/dx/one_ws/devel/share/hero_chassis_controller/cmake/hero_chassis_controllerConfig-version.cmake
+/home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/python3/dist-packages/hero_chassis_controller/__init__.py /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/hero_chassis_controller/__init__.py
+/home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/python3/dist-packages/hero_chassis_controller/cfg/__init__.py /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/hero_chassis_controller/cfg/__init__.py
 /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/pkgconfig/hero_chassis_controller.pc /home/qyd/dx/one_ws/devel/lib/pkgconfig/hero_chassis_controller.pc
 /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/hero_chassis_controller/cmd_vel_pub /home/qyd/dx/one_ws/devel/lib/hero_chassis_controller/cmd_vel_pub
 /home/qyd/dx/one_ws/devel/.private/hero_chassis_controller/lib/hero_chassis_controller/mecanum_wheels_pub /home/qyd/dx/one_ws/devel/lib/hero_chassis_controller/mecanum_wheels_pub

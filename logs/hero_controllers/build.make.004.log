@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target te[0m
+[35m[1mScanning dependencies of target hero_controllers_gencfg[0m
+[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/pid.cfg: /home/qyd/dx/one_ws/devel/.private/hero_controllers/include/hero_controllers/pidConfig.h /home/qyd/dx/one_ws/devel/.private/hero_controllers/lib/python3/dist-packages/hero_controllers/cfg/pidConfig.py[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/te.dir/src/re.cpp.o[0m
+Generating reconfiguration files for DynamicConfig in my_package
+Wrote header file in /home/qyd/dx/one_ws/devel/.private/hero_controllers/include/hero_controllers/DynamicConfigConfig.h
+[ 66%] Built target hero_controllers_gencfg
+[01m[K/home/qyd/dx/one_ws/src/hero_controllers/src/re.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kmy_package/DynamicConfig.h: 没有那个文件或目录
+    5 | #include [01;31m[K<my_package/DynamicConfig.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/te.dir/build.make:63：CMakeFiles/te.dir/src/re.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:460：CMakeFiles/te.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

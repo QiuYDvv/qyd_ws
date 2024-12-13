@@ -1,1 +1,0 @@
-/usr/bin/cmake -S/home/qyd/dx/one_ws/src/hero_chassis_controller -B/home/qyd/dx/one_ws/build/hero_chassis_controller --check-build-system CMakeFiles/Makefile.cmake 0

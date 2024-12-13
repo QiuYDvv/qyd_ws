@@ -1,0 +1,50 @@
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:70:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   70 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K;[m[K
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:[m[K In constructor ‘[01m[KVelocityController::VelocityController()[m[K’:
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:12:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetbuffer[m[K’?
+   12 |   VelocityController() : nh("~"), tf_listener([01;31m[Ktf_buffer[m[K) {
+      |                                               [01;31m[K^~~~~~~~~[m[K
+      |                                               [32m[Ksetbuffer[m[K
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:[m[K In member function ‘[01m[Kvoid VelocityController::cmdVelCallback(const TwistConstPtr&)[m[K’:
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:24:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel[m[K’ was not declared in this scope; did you mean ‘[01m[Kcmd_vel_sub[m[K’?
+   24 |     geometry_msgs::Twist transformed_cmd_vel = [01;31m[Kcmd_vel[m[K;
+      |                                                [01;31m[K^~~~~~~[m[K
+      |                                                [32m[Kcmd_vel_sub[m[K
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:32:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf::TransformListener::transformVector(const char [10], tf::Vector3&, tf::Vector3&)[m[K’
+   32 |         tf_listener.transformVector("base_link", vel_world, vel_base[01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+In file included from [01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/tf/transform_listener.h:99:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf::TransformListener::transformVector(const string&, const Vector3Stamped&, geometry_msgs::Vector3Stamped&) const[m[K’
+   99 |   void [01;36m[KtransformVector[m[K(const std::string& target_frame, const geometry_msgs::Vector3Stamped& stamped_in, geometry_msgs::Vector3Stamped& stamped_out) const;
+      |        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf/transform_listener.h:99:94:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Ktf::Vector3[m[K’ to ‘[01m[Kconst Vector3Stamped&[m[K’ {aka ‘[01m[Kconst geometry_msgs::Vector3Stamped_<std::allocator<void> >&[m[K’}
+   99 |   void transformVector(const std::string& target_frame, [01;36m[Kconst geometry_msgs::Vector3Stamped& stamped_in[m[K, geometry_msgs::Vector3Stamped& stamped_out) const;
+      |                                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf/transform_listener.h:119:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf::TransformListener::transformVector(const string&, const ros::Time&, const Vector3Stamped&, const string&, geometry_msgs::Vector3Stamped&) const[m[K’
+  119 |   void [01;36m[KtransformVector[m[K(const std::string& target_frame, const ros::Time& target_time,
+      |        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf/transform_listener.h:119:8:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+In file included from [01m[K/opt/ros/noetic/include/tf/transform_listener.h:38[m[K,
+                 from [01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/tf/tf.h:273:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf::Transformer::transformVector(const string&, const ros::Time&, const tf::Stamped<tf::Vector3>&, const string&, tf::Stamped<tf::Vector3>&) const[m[K’
+  273 |   void [01;36m[KtransformVector[m[K(const std::string& target_frame, const ros::Time& target_time,
+      |        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf/tf.h:273:8:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+[01m[K/opt/ros/noetic/include/tf/tf.h:257:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf::Transformer::transformVector(const string&, const tf::Stamped<tf::Vector3>&, tf::Stamped<tf::Vector3>&) const[m[K’
+  257 |   void [01;36m[KtransformVector[m[K(const std::string& target_frame, const Stamped<tf::Vector3>& stamped_in, Stamped<tf::Vector3>& stamped_out) const;
+      |        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf/tf.h:257:85:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Ktf::Vector3[m[K’ to ‘[01m[Kconst tf::Stamped<tf::Vector3>&[m[K’
+  257 |   void transformVector(const std::string& target_frame, [01;36m[Kconst Stamped<tf::Vector3>& stamped_in[m[K, Stamped<tf::Vector3>& stamped_out) const;
+      |                                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:38:9:[m[K [01;31m[Kerror: [m[Kcontinue statement not within a loop
+   38 |         [01;31m[Kcontinue[m[K;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:[m[K At global scope:
+[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:71:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   71 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/tf_transform.dir/build.make:63：CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:185：CMakeFiles/tf_transform.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2
