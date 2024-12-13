@@ -1,7 +1,7 @@
 #include <geometry_msgs/Twist.h>
 #include <ros/ros.h>
+#include <std_msgs/Float64.h>
 #include <tf/transform_listener.h>
-
 class VelocityController {
 public:
   VelocityController() {
@@ -10,6 +10,8 @@ public:
         nh.subscribe("/cmd_vel", 10, &VelocityController::cmdVelCallback, this);
     nh.param("wheel_base", wheel_base, 0.4);
     nh.param("velocity_mode", velocity_mode, std::string("odom"));
+
+
   }
 
   void cmdVelCallback(const geometry_msgs::Twist::ConstPtr &msg) {
@@ -60,6 +62,14 @@ public:
 private:
   ros::NodeHandle nh;
   ros::Subscriber cmd_vel_sub;
+  ros::Publisher left_front_wheel_pub = nh.advertise<std_msgs::Float64>(
+      "/controller/left_front_wheel_controller/command", 50);
+  ros::Publisher right_front_wheel_pub = nh.advertise<std_msgs::Float64>(
+      "/controller/right_front_wheel_controller/command", 50);
+  ros::Publisher left_back_wheel_pub = nh.advertise<std_msgs::Float64>(
+      "/controller/left_back_wheel_controller/command", 50);
+  ros::Publisher right_back_wheel_pub = nh.advertise<std_msgs::Float64>(
+      "/controller/right_back_wheel_controller/command", 50);
   tf::TransformListener tf_listener; // 使用旧版TF的变换监听器
   double wheel_base;
   std::string velocity_mode;
@@ -76,8 +86,14 @@ private:
   // 执行轮速函数
   void excuteWheelSpeeds(double v1, double v2, double v3, double v4) {
     ROS_INFO("v1: %f, v2: %f, v3: %f, v4: %f", v1, v2, v3, v4);
+
+    left_front_wheel_pub.publish(v1);
+    right_front_wheel_pub.publish(v2);
+    left_back_wheel_pub.publish(v3);
+    right_back_wheel_pub.publish(v4);
   }
 };
+
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "tf_transform");
