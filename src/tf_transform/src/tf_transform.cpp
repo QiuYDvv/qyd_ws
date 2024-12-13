@@ -10,8 +10,6 @@ public:
         nh.subscribe("/cmd_vel", 10, &VelocityController::cmdVelCallback, this);
     nh.param("wheel_base", wheel_base, 0.4);
     nh.param("velocity_mode", velocity_mode, std::string("odom"));
-
-
   }
 
   void cmdVelCallback(const geometry_msgs::Twist::ConstPtr &msg) {
@@ -71,29 +69,38 @@ private:
   ros::Publisher right_back_wheel_pub = nh.advertise<std_msgs::Float64>(
       "/controller/right_back_wheel_controller/command", 50);
   tf::TransformListener tf_listener; // 使用旧版TF的变换监听器
-  double wheel_base;
+  double wheel_base = 0.4;
   std::string velocity_mode;
+  double track_width = 0.4;
+  double wheel_radius = 0.07625;
 
   // 逆运动学计算函数
   void inverseKinematics(double vx, double vy, double wz, double &v1,
                          double &v2, double &v3, double &v4) {
-    v1 = vx - vy - (wheel_base * wz);
-    v2 = vx + vy + (wheel_base * wz);
-    v3 = vx + vy - (wheel_base * wz);
-    v4 = vx - vy + (wheel_base * wz);
+    v1 = (vx - vy - (wheel_base + track_width) * wz) / wheel_radius;
+    v2 = (vx + vy + (wheel_base + track_width) * wz) / wheel_radius;
+    v3 = (vx + vy - (wheel_base + track_width) * wz) / wheel_radius;
+    v4 = (vx - vy + (wheel_base + track_width) * wz) / wheel_radius;
   }
 
   // 执行轮速函数
   void excuteWheelSpeeds(double v1, double v2, double v3, double v4) {
     ROS_INFO("v1: %f, v2: %f, v3: %f, v4: %f", v1, v2, v3, v4);
 
-    left_front_wheel_pub.publish(v1);
-    right_front_wheel_pub.publish(v2);
-    left_back_wheel_pub.publish(v3);
-    right_back_wheel_pub.publish(v4);
+    std_msgs::Float64 left_back_wheel_speed_msg;
+    std_msgs::Float64 right_back_wheel_speed_msg;
+    std_msgs::Float64 left_front_wheel_speed_msg;
+    std_msgs::Float64 right_front_wheel_speed_msg;
+    left_front_wheel_speed_msg.data = v1;
+    right_front_wheel_speed_msg.data = v2;
+    left_back_wheel_speed_msg.data = v3;
+    right_back_wheel_speed_msg.data = v4;
+    left_front_wheel_pub.publish(left_front_wheel_speed_msg);
+    right_front_wheel_pub.publish(right_front_wheel_speed_msg);
+    left_back_wheel_pub.publish(left_back_wheel_speed_msg);
+    right_back_wheel_pub.publish(right_back_wheel_speed_msg);
   }
 };
-
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "tf_transform");

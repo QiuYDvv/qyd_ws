@@ -11,6 +11,8 @@ geometry_msgs/Twist.h
 -
 ros/ros.h
 -
+std_msgs/Float64.h
+-
 tf/transform_listener.h
 -
 
@@ -975,6 +977,22 @@ sensor_msgs/ChannelFloat32.h
 -
 
 /opt/ros/noetic/include/std_msgs/Empty.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/noetic/include/std_msgs/Float64.h
 string
 -
 vector

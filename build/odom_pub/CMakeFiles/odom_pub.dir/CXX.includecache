@@ -7,17 +7,19 @@
 #IncludeRegexTransform: 
 
 /home/qyd/dx/one_ws/src/odom_pub/src/odom_pub.cpp
-ros/ros.h
--
-nav_msgs/Odometry.h
+geometry_msgs/TransformStamped.h
 -
 geometry_msgs/Twist.h
 -
-tf2_ros/transform_broadcaster.h
+nav_msgs/Odometry.h
+-
+ros/ros.h
+-
+std_msgs/Float64.h
 -
 tf2/LinearMath/Quaternion.h
 -
-geometry_msgs/TransformStamped.h
+tf2_ros/transform_broadcaster.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
@@ -853,6 +855,22 @@ ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
+
+/opt/ros/noetic/include/std_msgs/Float64.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/noetic/include/std_msgs/Header.h
 string
