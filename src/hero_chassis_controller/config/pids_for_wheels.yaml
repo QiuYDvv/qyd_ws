@@ -1,0 +1,17 @@
+controller:
+  left_front_wheel_controller:
+    type: effort_controllers/JointEffortController
+    joint: left_front_wheel_joint
+    pid: { p: 10.0, i: 0.1, d: 0.01 }
+  left_back_wheel_controller:
+    type: effort_controllers/JointEffortController
+    joint: left_back_wheel_joint
+    pid: { p: 10.0, i: 0.1, d: 0.01 }
+  right_front_wheel_controller:
+    type: effort_controllers/JointEffortController
+    joint: right_front_wheel_joint
+    pid: { p: 10.0, i: 0.1, d: 0.01 }
+  right_back_wheel_controller:
+    type: effort_controllers/JointEffortController
+    joint: right_back_wheel_joint
+    pid: { p: 10.0, i: 0.1, d: 0.01 }

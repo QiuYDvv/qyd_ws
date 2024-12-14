@@ -7,7 +7,7 @@
 
   <rosparam file="$(find simple_chassis_controller)/config/controllers.yaml" command="load"/>
   <!-- load the controllers -->
-  <rosparam file="$(find simple_chassis_controller)/config/pids_for_wheels.yaml" command="load"/>
+  <rosparam file="$(find hero_chassis_controller)/config/pids_for_wheels.yaml" command="load"/>
 
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
         output="screen" args="
@@ -20,6 +20,7 @@
   "/>
    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
-
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hero_chassis_controller)/config/hero_chassis.rviz" required="true"/>
+    <node pkg="odom_pub" type="odom_pub" name="odom_pub"/>
 
 </launch>
