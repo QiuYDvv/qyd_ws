@@ -1,0 +1,11 @@
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig-usage.dox
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig.wikidoc
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig.dox
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/cmake/my_controllersConfig-version.cmake
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/cmake/my_controllersConfig.cmake
+Symlinking /home/qyd/dx/one_ws/devel/include/my_controllers/ExploreConfig.h
+Symlinking /home/qyd/dx/one_ws/devel/lib/libmy_controllers.so
+Symlinking /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/__init__.py
+Symlinking /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/cfg/ExploreConfig.py
+Symlinking /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/cfg/__init__.py
+Symlinking /home/qyd/dx/one_ws/devel/lib/pkgconfig/my_controllers.pc

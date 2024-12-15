@@ -1,0 +1,8 @@
+prefix=/home/qyd/dx/one_ws/install
+
+Name: my_controllers
+Description: Description of my_controllers
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,13 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~timeout" : \b [double] Explore Timeout(s) min: 10.0, default: 30.0, max: 100.0
+- \b "~min_frontier_size" : \b [double] Min Frontier Size(m) min: 0.5, default: 0.75, max: 2.0
+- \b "~visualize" : \b [bool] Is Visualize? min: False, default: True, max: True
+- \b "~frontier_type" : \b [str] Select Frontier Type min: , default: centroid, max: 
+- \b "~potential_scale" : \b [double] Distance Weight min: -std::numeric_limits<double>::infinity(), default: 3.0, max: std::numeric_limits<double>::infinity()
+- \b "~gain_scale" : \b [double] Gain Weight min: -std::numeric_limits<double>::infinity(), default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~information_scale" : \b [double] Information Weight min: -std::numeric_limits<double>::infinity(), default: 1.2, max: std::numeric_limits<double>::infinity()
+- \b "~information_r" : \b [double] Information Radius min: -std::numeric_limits<double>::infinity(), default: 3.0, max: std::numeric_limits<double>::infinity()
+

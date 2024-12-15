@@ -1,4 +1,1 @@
-[35m[1mScanning dependencies of target odom_pub[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/qyd/dx/one_ws/devel/.private/odom_pub/lib/odom_pub/odom_pub[0m
 [100%] Built target odom_pub
