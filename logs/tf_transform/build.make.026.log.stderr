@@ -1,7 +1,0 @@
-[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:[m[K In member function ‘[01m[Kbool VelocityController::transformVelocityToBaseLink(const TwistConstPtr&, geometry_msgs::Twist&)[m[K’:
-[01m[K/home/qyd/dx/one_ws/src/tf_transform/src/tf_transform.cpp:68:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2_ros::TransformListener[m[K’ has no member named ‘[01m[Ktransform[m[K’
-   68 |       tf_listener.[01;31m[Ktransform[m[K(transform_stamped, *cmd_vel, transformed_cmd_vel);
-      |                   [01;31m[K^~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/tf_transform.dir/build.make:63：CMakeFiles/tf_transform.dir/src/tf_transform.cpp.o] 错误 1
-make[1]: *** [CMakeFiles/Makefile2:180：CMakeFiles/tf_transform.dir/all] 错误 2
-make: *** [Makefile:141：all] 错误 2

@@ -1,8 +1,0 @@
-prefix=/home/qyd/dx/one_ws/build/devel
-
-Name: tf_transform
-Description: Description of tf_transform
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs roscpp std_msgs tf2 tf2_geometry_msgs tf2_ros tf2_sensor_msgs

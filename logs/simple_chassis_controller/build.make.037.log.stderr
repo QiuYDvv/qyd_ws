@@ -1,8 +1,0 @@
-  File "/home/qyd/dx/one_ws/src/simple_chassis_controller/config/pid.cfg", line 14
-    "
-    ^
-SyntaxError: EOL while scanning string literal
-make[2]: *** [CMakeFiles/simple_chassis_controller_gencfg.dir/build.make:64：/home/qyd/dx/one_ws/devel/.private/simple_chassis_controller/include/simple_chassis_controller/pidConfig.h] 错误 1
-make[1]: *** [CMakeFiles/Makefile2:381：CMakeFiles/simple_chassis_controller_gencfg.dir/all] 错误 2
-make[1]: *** 正在等待未完成的任务....
-make: *** [Makefile:141：all] 错误 2

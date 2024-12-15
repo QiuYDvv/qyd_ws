@@ -1,11 +1,11 @@
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/share/my_controllers/docs/ExploreConfig-usage.dox, /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig-usage.dox)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/share/my_controllers/docs/ExploreConfig.wikidoc, /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig.wikidoc)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/share/my_controllers/docs/ExploreConfig.dox, /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig.dox)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/share/my_controllers/cmake/my_controllersConfig-version.cmake, /home/qyd/dx/one_ws/devel/share/my_controllers/cmake/my_controllersConfig-version.cmake)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/share/my_controllers/cmake/my_controllersConfig.cmake, /home/qyd/dx/one_ws/devel/share/my_controllers/cmake/my_controllersConfig.cmake)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/include/my_controllers/ExploreConfig.h, /home/qyd/dx/one_ws/devel/include/my_controllers/ExploreConfig.h)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/lib/libmy_controllers.so, /home/qyd/dx/one_ws/devel/lib/libmy_controllers.so)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/lib/python3/dist-packages/my_controllers/__init__.py, /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/__init__.py)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/lib/python3/dist-packages/my_controllers/cfg/ExploreConfig.py, /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/cfg/ExploreConfig.py)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/lib/python3/dist-packages/my_controllers/cfg/__init__.py, /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/cfg/__init__.py)
-Linked: (/home/qyd/dx/one_ws/devel/.private/my_controllers/lib/pkgconfig/my_controllers.pc, /home/qyd/dx/one_ws/devel/lib/pkgconfig/my_controllers.pc)
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig-usage.dox
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig.wikidoc
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/docs/ExploreConfig.dox
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/cmake/my_controllersConfig-version.cmake
+Symlinking /home/qyd/dx/one_ws/devel/share/my_controllers/cmake/my_controllersConfig.cmake
+Symlinking /home/qyd/dx/one_ws/devel/include/my_controllers/ExploreConfig.h
+Symlinking /home/qyd/dx/one_ws/devel/lib/libmy_controllers.so
+Symlinking /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/__init__.py
+Symlinking /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/cfg/ExploreConfig.py
+Symlinking /home/qyd/dx/one_ws/devel/lib/python3/dist-packages/my_controllers/cfg/__init__.py
+Symlinking /home/qyd/dx/one_ws/devel/lib/pkgconfig/my_controllers.pc

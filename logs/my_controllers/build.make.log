@@ -1,2 +1,9 @@
-[ 33%] Built target my_controllers_gencfg
+[35m[1mScanning dependencies of target my_controllers_gencfg[0m
+[35m[1mScanning dependencies of target my_controllers[0m
+[ 33%] [34m[1mGenerating dynamic reconfigure files from config/Explore.cfg: /home/qyd/dx/one_ws/devel/.private/my_controllers/include/my_controllers/ExploreConfig.h /home/qyd/dx/one_ws/devel/.private/my_controllers/lib/python3/dist-packages/my_controllers/cfg/ExploreConfig.py[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/my_controllers.dir/src/my_controllers.cpp.o[0m
+Generating reconfiguration files for Explore in explore_server
+Wrote header file in /home/qyd/dx/one_ws/devel/.private/my_controllers/include/my_controllers/ExploreConfig.h
+[ 66%] Built target my_controllers_gencfg
+[100%] [32m[1mLinking CXX shared library /home/qyd/dx/one_ws/devel/.private/my_controllers/lib/libmy_controllers.so[0m
 [100%] Built target my_controllers
